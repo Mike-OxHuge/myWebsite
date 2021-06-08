@@ -92,13 +92,11 @@ const aboutContent = `
 <div class="fadeIn">
   <h1>The about page</h1>
     <div style="display: flex; justify-content: center">
-      <img
-        id="about-image"
-        src="https://picsum.photos/800/600?random=3"
-        alt="random image 3"
-      />
+      <h1>ITSA ME! MIKE!</h1>
     </div>
   <p>
+    Something has to go in here, but I don't thin anything could describe me 
+    better than our beloved 
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Exercitationem porro sint illo adipisci temporibus iure, quas cum
     dolor. Esse, beatae.

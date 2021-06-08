@@ -97,13 +97,13 @@ footer {
   clear: left;
   margin: 0 0 1rem 1rem;
 }
-#main div.fadeIn div img#about-image:nth-of-type(1) {
+/* #main div.fadeIn div img#about-image:nth-of-type(1) {
   width: 100% !important;
   max-width: 30% !important;
   max-height: 100% !important;
   float: none;
   margin: 0 0;
-}
+} */
 .contacts {
   display: flex;
   flex-direction: column;
@@ -111,6 +111,7 @@ footer {
 }
 .contacts img {
   max-width: 8rem;
+  margin: 0;
 }
 .contacts-section {
   display: flex;
@@ -140,11 +141,13 @@ footer {
   animation-name: flipInX;
   animation-duration: 2500ms;
   animation-fill-mode: both;
+  animation-delay: 2s;
 }
 .rotate {
   animation-name: rotateInDownRight;
   animation-duration: 1500ms;
   animation-fill-mode: both;
+  animation-delay: 2s;
 }
 /* .contacts div {
   width: 20px;
