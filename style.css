@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 @import url("./keyframes.css");
+html {
+  overflow: auto;
+}
 p,
 h1,
 h2,
@@ -18,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 1rem 0 1rem;
 }
 
@@ -26,6 +29,11 @@ body {
 nav span {
   margin: auto 1rem 0 0;
   font-weight: 700;
+  padding: 0.5rem;
+}
+#slowDown,
+#speedUp {
+  font-size: 0.5rem;
 }
 nav span:hover {
   cursor: pointer;
@@ -33,12 +41,12 @@ nav span:hover {
 .clicked {
   animation-duration: 500ms;
   animation-timing-function: linear;
-  animation-name: semi-spin;
+  animation-name: wobble;
 }
-.clicked2 {
-  animation-duration: 500ms;
-  animation-timing-function: linear;
-  animation-name: semi-spin;
+.active-link {
+  border-radius: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.562);
 }
 nav {
   border-bottom: 1px #808080c2 solid;
@@ -57,6 +65,7 @@ nav .controls span {
 }
 .controls {
   text-align: center;
+  margin-top: 1rem;
 }
 
 /* FOOTER STYLES */
@@ -65,4 +74,91 @@ footer {
   padding-top: 1rem;
   display: block;
   margin-top: auto;
+}
+
+/* MAIN CONTENT STYLES */
+#main img {
+  max-width: 8rem;
+  max-height: 6rem;
+  border-radius: 1rem;
+}
+
+#main img:nth-of-type(1) {
+  max-width: 8rem;
+  max-height: 6rem;
+  float: left;
+  clear: right;
+  margin: 0 1rem 1rem 0;
+}
+#main img:nth-of-type(2) {
+  max-width: 8rem;
+  max-height: 6rem;
+  float: right;
+  clear: left;
+  margin: 0 0 1rem 1rem;
+}
+#main div.fadeIn div img#about-image:nth-of-type(1) {
+  width: 100% !important;
+  max-width: 30% !important;
+  max-height: 100% !important;
+  float: none;
+  margin: 0 0;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contacts img {
+  max-width: 8rem;
+}
+.contacts-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contacts-section div {
+  margin: 1rem;
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2500ms;
+  animation-fill-mode: both;
+}
+
+.flying {
+  animation-name: flying;
+  animation-duration: 2500ms;
+  animation-fill-mode: both;
+}
+.bounce {
+  animation-name: bounceInUp;
+  animation-duration: 2500ms;
+  animation-fill-mode: both;
+}
+.flip {
+  animation-name: flipInX;
+  animation-duration: 2500ms;
+  animation-fill-mode: both;
+}
+.rotate {
+  animation-name: rotateInDownRight;
+  animation-duration: 1500ms;
+  animation-fill-mode: both;
+}
+/* .contacts div {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+} */
+
+@media only screen and (max-width: 768px) {
+  #spinningImage,
+  #slowDown,
+  #speedUp {
+    display: none;
+  }
+  nav {
+    margin-top: 1rem;
+  }
 }
