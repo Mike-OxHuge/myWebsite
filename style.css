@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import url("./keyframes.css");
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.76);
+}
+body {
+  background-color: rgba(0, 0, 0, 0.253);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 1rem 0 1rem;
+}
+
+/* NAV STYLES */
+nav span {
+  margin: auto 1rem 0 0;
+  font-weight: 700;
+}
+nav span:hover {
+  cursor: pointer;
+}
+.clicked {
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-name: semi-spin;
+}
+.clicked2 {
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-name: semi-spin;
+}
+nav {
+  border-bottom: 1px #808080c2 solid;
+  padding-bottom: 1rem;
+}
+nav img {
+  max-width: 7rem;
+  margin: 1rem 0 0.5rem 1rem;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+nav .controls span {
+  margin: 0 0 0 1rem;
+}
+.controls {
+  text-align: center;
+}
+
+/* FOOTER STYLES */
+footer {
+  border-top: 1px rgba(128, 128, 128, 0.76) solid;
+  padding-top: 1rem;
+  display: block;
+  margin-top: auto;
+}
