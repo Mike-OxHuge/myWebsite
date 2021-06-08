@@ -95,7 +95,7 @@ const aboutContent = `
       <h1>ITSA ME! MIKE!</h1>
     </div>
   <p>
-    Something has to go in here, but I don't thin anything could describe me 
+    Something has to go in here, but I don't think anything could describe me 
     better than our beloved 
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Exercitationem porro sint illo adipisci temporibus iure, quas cum
